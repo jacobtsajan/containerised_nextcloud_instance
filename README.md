@@ -93,8 +93,8 @@ containerised-nextcloud/
 ### Step 1 — Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/containerised-nextcloud.git
-cd containerised-nextcloud
+git clone https://github.com/jacobtsajan/containerised_nextcloud_instance.git
+cd containerised-nextcloud_instance
 ```
 
 ### Step 2 — Create the Environment File
