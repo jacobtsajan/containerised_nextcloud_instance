@@ -10,19 +10,19 @@ A fully containerised, self-hosted [Nextcloud](https://nextcloud.com/) file serv
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                        Host Machine                             │
-│                                                                 │
-│  ┌─────────────┐    ┌──────────────────┐    ┌───────────────┐   │
-│  │    Nginx     │    │   Nextcloud App   │    │   MariaDB     │   │
-│  │  (Alpine)    │───▶│   (PHP-FPM)       │───▶│   (v11)       │   │
-│  │             │    │                    │    │               │   │
-│  │  Port: 21   │    │  Port: 9000       │    │  Port: 3336   │   │
-│  │  (exposed)  │    │  (internal only)  │    │  (exposed)    │   │
-│  └─────────────┘    └──────────────────┘    └───────────────┘   │
-│         │                    │                       │           │
-│         └────────────────────┴───────────────────────┘           │
-│                    Docker Bridge Network                         │
-│                   (nextcloud-net)                                │
+│                        Host Machine                                   │  
+│                                                                       │
+│  ┌─────────────┐     ┌──────────────────┐    ┌───────────────┐   │
+│  │    Nginx     │     │   Nextcloud App    │    │   MariaDB      │   │
+│  │  (Alpine)    │───▶ │   (PHP-FPM)       │───▶│   (v11)        │   │
+│  │              │     │                    │    │                │   │
+│  │  Port: 21    │     │  Port: 9000        │    │  Port: 3336    │   │
+│  │  (exposed)   │     │  (internal only)   │    │  (exposed)     │   │
+│  └─────────────┘     └──────────────────┘    └───────────────┘   │
+│         │                      │                         │           │
+│         └────────────────────┴───────────────────────┘            │
+│                    Docker Bridge Network                              │
+│                   (nextcloud-net)                                     │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
