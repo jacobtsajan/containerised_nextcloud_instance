@@ -208,7 +208,7 @@ docker exec -u www-data nextcloud-app php occ status
 # Stop all containers (data preserved)
 docker compose down
 
-# Stop and DELETE all data (⚠️ destructive!)
+# Stop and DELETE all data ( destructive!)
 docker compose down -v
 
 # Restart a specific service
