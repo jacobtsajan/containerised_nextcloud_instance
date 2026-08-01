@@ -74,7 +74,7 @@ Both volumes are Docker-managed named volumes, ensuring data survives container 
 containerised-nextcloud/
 ├── docker-compose.yml   # Stack definition (3 services, 2 volumes, 1 network)
 ├── nginx.conf           # Nginx reverse proxy config (optimised for Nextcloud)
-├── .env                 # Credentials (⚠️ not tracked in git)
+├── .env                 # Credentials ( not tracked in git)
 ├── .env.example         # Template for .env (safe to commit)
 ├── .gitignore           # Excludes .env and other sensitive/unnecessary files
 └── README.md            # This file
