@@ -19,7 +19,7 @@ A fully containerised, self-hosted [Nextcloud](https://nextcloud.com/) file serv
 │  │  Port: 21    │     │  Port: 9000        │    │  Port: 3336    │   │
 │  │  (exposed)   │     │  (internal only)   │    │  (exposed)     │   │
 │  └─────────────┘     └──────────────────┘    └───────────────┘   │
-│         │                      │                         │           │
+│         │                      │                         │            │
 │         └────────────────────┴───────────────────────┘            │
 │                    Docker Bridge Network                              │
 │                   (nextcloud-net)                                     │
